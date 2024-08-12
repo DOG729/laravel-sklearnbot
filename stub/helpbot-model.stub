@@ -1,0 +1,57 @@
+<?php
+
+namespace App\Sklearnbot\HelpBot;
+
+use LaravelSklearnBot\Contracts\HelpBotContract;
+
+class {{ className }} implements HelpBotContract
+{
+
+    public function type()
+    {
+        return '{{ name }}';
+    }
+
+    /**
+     * @return array
+     */
+    public function push()
+    {
+        // Your push logic here
+        /*
+        return [
+            [
+                'id' => '1',
+                'title' => 'hi bot',
+                'text' => 'hi user!',
+                'synonym' => [
+                    'Hi', 'Hi man'
+                ],
+                'action' => [
+                    'TEST_BOT'
+                ]
+            ],
+            [
+                    'id' => '2',
+                    'title' => 'bay bot',
+                    'text' => 'bay user!',
+                    'synonym' => [
+                        'bay', 'bay man'
+                    ],
+                    'action' => [
+                        'TEST_BOT_BAY'
+                    ]
+            ],
+            [
+                'id' => '3',
+                'title' => 'boba',
+                'text' => 'aboba',
+            ]
+        ];
+        */
+    }
+
+    public function eventAfterCreatedOrUpdated($item){
+        // Your event logic here
+    }
+}

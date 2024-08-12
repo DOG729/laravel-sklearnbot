@@ -1,0 +1,41 @@
+{
+    "name": "dog729/laravel-sklearnbot",
+    "description": "laravel sklern bot",
+    "type": "library",
+    "minimum-stability": "dev",
+    "keywords": [
+        "laravel",
+        "neuralnetwork",
+        "training"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LaravelSklearnbot\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dog729\\LaravelSklearnBotTests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DOG729"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-json": "*",
+        "laravel/framework": ">=7.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelSklearnbot\\SklearnbotServiceProvider"
+            ]
+        }
+    }
+
+}
